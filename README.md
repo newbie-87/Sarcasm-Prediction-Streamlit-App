@@ -12,9 +12,9 @@ A BERT-powered tweet sarcasm classifier built with Streamlit.
 
 ---
 
-## ⚠️ Important: Adding your model
+## Model Adding 
 
-The `sarcasm_bert/` folder is uploaded to Hugging Face from Colab training .
+The `sarcasm_bert/` folder is uploaded to Hugging Face from Colab training and the end oint is added to the app.py file.
 
 
 The folder contains:
@@ -28,12 +28,4 @@ sarcasm_bert/
 ```
 
 ---
-
-## Deploy on Streamlit Cloud
-
-1. Push this repo (including `sarcasm_bert/`) to GitHub
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Click **New app**
-4. Select your repo, branch (`main`), and set main file to `app.py`
-5. Click **Deploy**
 
