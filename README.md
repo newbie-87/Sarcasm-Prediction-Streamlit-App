@@ -9,27 +9,15 @@ A BERT-powered tweet sarcasm classifier built with Streamlit.
 | `app.py` | Streamlit app |
 | `requirements.txt` | Python dependencies |
 | `packages.txt` | System dependencies for Streamlit Cloud |
-| `sarcasm_bert/` | Fine-tuned BERT model files (**you must add this**) |
 
 ---
 
 ## ⚠️ Important: Adding your model
 
-The `sarcasm_bert/` folder is **not included** — you need to upload it from your Colab training run.
+The `sarcasm_bert/` folder is uploaded to Hugging Face from Colab training .
 
-After training, run this in Colab to download the model folder:
 
-```python
-from google.colab import files
-import shutil
-
-shutil.make_archive("sarcasm_bert", "zip", ".", "sarcasm_bert")
-files.download("sarcasm_bert.zip")
-```
-
-Then unzip it and place the `sarcasm_bert/` folder in the root of this repo before pushing to GitHub.
-
-The folder should contain:
+The folder contains:
 ```
 sarcasm_bert/
   config.json
@@ -49,13 +37,3 @@ sarcasm_bert/
 4. Select your repo, branch (`main`), and set main file to `app.py`
 5. Click **Deploy**
 
-> **Note:** The free tier of Streamlit Cloud has 1 GB RAM. BERT fits within this but may take ~30 seconds to load on first visit.
-
----
-
-## Run locally
-
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
