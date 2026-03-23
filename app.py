@@ -229,7 +229,7 @@ def clean_tweet(text: str) -> str:
     return text
 
 
-# ── Set your Hugging Face model repo ID here ──────────────────────────────────
+# ── Setting Hugging Face model repo ID here ──────────────────────────────────
 HF_MODEL_ID = "newbie87/sarcasm-bert"
 # ──────────────────────────────────────────────────────────────────────────────
 
